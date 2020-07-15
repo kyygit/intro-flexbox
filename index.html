@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSSDesk</title>
+    <style type="text/css">
+      
+      body { background-color: #2574b0; }
+      
+      
+#mainContainer {
+  display: flex;
+  flex-direction: row; /*default*/
+  height: 50%;
+}
+
+#subContainerLeft {
+  display:flex;
+  flex-direction: row; /*default*/
+  justify-content: space-between;
+  width: 30%;
+  
+  border: solid 1px #000;
+  padding: 5px;
+  background: #e0f0f0;
+}
+
+#subSubContainerLeftA {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+  border: dashed 1px #000;
+  width:100%
+}
+
+#subSubContainerLeftB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: dashed 1px #000;
+  width:100%
+}
+
+#subSubContainerLeftC {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  border: dashed 1px #000;
+  width:100%
+
+}
+
+#subContainerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30%;
+  
+  border: solid 1px #000;
+  padding: 5px;
+  background: #f0f0e0;
+}
+
+#subSubContainerRightA {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+  border: dashed 1px #000;
+  height:100%
+}
+
+#subSubContainerRightB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: dashed 1px #000;
+  height:100%
+}
+
+#subSubContainerRightC {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  border: dashed 1px #000;
+  height:100%
+}
+
+
+    </style>
+  </head>
+  <body>
+    
+
+
+<div style="height:500px">
+  <div id="mainContainer">
+    <div id="subContainerLeft">
+      <div id="subSubContainerLeftA">flex1</div>
+      <div id="subSubContainerLeftB">flex2</div>
+      <div id="subSubContainerLeftC">flex3</div>
+    </div>
+  
+    <div id="subContainerRight">
+      <div id="subSubContainerRightA">flex4</div>
+      <div id="subSubContainerRightB">flex5</div>
+      <div id="subSubContainerRightC">flex6</div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
